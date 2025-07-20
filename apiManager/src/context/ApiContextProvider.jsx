@@ -30,25 +30,32 @@ function ApiContextProvider({children}) {
             let newApiKey = {
                 id: Date.now(),
                 label: apiLabel || 'None',
-                key: generateApiKey(
-                    
-                ), 
+                key: generateApiKey(), 
             }
             setApiData((prev) =>  ([...prev, newApiKey]))
         }
 
     // Edit API
         const editApiKey = (id, newApiLabel) => {
-        
-            setApiData((prev) => (prev.map((key) => {
+            setApiData((prev) => (prev.map((key) => 
                 key.id === id ? {...key, label: newApiLabel} : key
-            })))
+            )))
         }
 
     // Delete API
-    const deleteApiKey = (id) => (
-        setApiData((prev) => ([...prev,apiData.filter((key) => (key.id !== id))]))
-    )
+        const deleteApiKey = (id) => (
+            setApiData((prev) => prev.filter((key) => (key.id !== id)))
+        )
+
+    // Copy API Key
+        const copyApiKey = async (key) => {
+            try {
+                await navigator.clipboard.writeText(key);
+                alert("API Key copied to clipboard!");
+            } catch (error) {
+                alert("Failed to copy API Key.");
+            }
+        }
 
     // Generate API
         const generateApiKey = () => {
@@ -56,11 +63,12 @@ function ApiContextProvider({children}) {
                 Math.random().toString(36).substring(2,20) + "+" + Math.random().toString(36).substring(2,20) + "_" + Math.random().toString(36).substring(2,20)
             )
         }
+
   return (
-    <ApiContext.Provider value={{apiData, addApiKey, editApiKey, deleteApiKey}}>
+    <ApiContext.Provider value={{apiData, addApiKey, editApiKey, deleteApiKey, copyApiKey}}>
         {children}
     </ApiContext.Provider>
   )
 }
 
-export default ApiContextProvider
+export default ApiContextProvider;
