@@ -41,21 +41,21 @@ A full‑stack blog platform built with React.js and Appwrite, featuring real‑
 
 ### Installation
 
-1. **Clone the repo**  
+1. Clone the repo  
    ```bash
    git clone https://github.com/narayan24x7/React-Internship.git
    cd React-Internship/finalBlog
 ````
 
-2. **Install dependencies**
+2. Install dependencies
 
    ```bash
    npm install
    # or
    yarn install
-   ```
+   
 
-3. **Configure environment**
+3. Configure environment
    Create a `.env.local` file in the `finalBlog` folder with the following variables:
 
    ```env
@@ -72,7 +72,7 @@ A full‑stack blog platform built with React.js and Appwrite, featuring real‑
 npm start
 # or
 yarn start
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see the blog home page, with options to sign up or log in.
 
@@ -118,7 +118,7 @@ Distributed under the MIT License. See [LICENSE](../../LICENSE) for details.
 
 ## 📬 Contact
 
-**Narayandas Kachhi**
+Narayandas Kachhi
 
 * Email: [narayankachhi43@gmail.com](mailto:narayankachhi43@gmail.com)
 * GitHub: [narayan24x7](https://github.com/narayan24x7)
