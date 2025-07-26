@@ -128,7 +128,7 @@ Live demo of the “Final Blog” project is hosted here:
 
    ```npm install
    # or
-   ```yarn install
+   yarn install
 
 ### Running a Project
 
@@ -144,7 +144,7 @@ Each folder is a standalone React app:
    ```bash
    npm start
    # or
-   ```yarn start
+   yarn start
    
 3. **Open** [http://localhost:3000](http://localhost:3000) in your browser.
 
