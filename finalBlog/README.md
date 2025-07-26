@@ -76,9 +76,7 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see the blog home page, with options to sign up or log in.
 
----
-
-## 🏗️ Project Structure
+🏗️ Project Structure
 
 ```
 finalBlog/
@@ -94,11 +92,8 @@ finalBlog/
 ├── .env.local
 ├── tailwind.config.js
 └── package.json
-```
 
----
-
-## 🤝 Contributing
+🤝 Contributing
 
 1. Fork this repository
 2. Create a feature branch: `git checkout -b feature/awesome-post`
@@ -106,17 +101,13 @@ finalBlog/
 4. Push to your branch: `git push origin feature/awesome-post`
 5. Open a Pull Request
 
-Please follow existing code style and update tests or documentation as needed.
+Please follow the existing code style and update tests or documentation as needed.
 
----
-
-## 📄 License
+📄 License
 
 Distributed under the MIT License. See [LICENSE](../../LICENSE) for details.
 
----
-
-## 📬 Contact
+ 📬 Contact
 
 Narayandas Kachhi
 
