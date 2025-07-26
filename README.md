@@ -123,7 +123,6 @@ Live demo of the “Final Blog” project is hosted here:
    git clone https://github.com/narayan24x7/React-Internship.git
    cd React-Internship
 
-  
 2. **Install dependencies**
 
    ```npm install
