@@ -1,4 +1,3 @@
-````markdown
 # Final Blog
 
 A full‑stack blog platform built with React.js and Appwrite, featuring real‑time CRUD operations, secure authentication, and a responsive UI. This project was developed as the capstone “finalBlog” module of the React-Internship series.
